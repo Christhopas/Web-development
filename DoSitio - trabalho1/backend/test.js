@@ -10,9 +10,9 @@ describe('###Tests for Server Configuration', async(t) => {
             await app.close();
         });
     
-        deepEqual(options.stage,'test'); //'dev' no .env 
+        deepEqual(options.stage,'test'); // olha no .env
         deepEqual(options.port,'5000');
-        deepEqual(options.host,'127.0.0.1'); //talvez seja '1270.0.0.1'
+        deepEqual(options.host,'127.0.0.1'); 
         deepEqual(options.jwt_secret,'Abcd@1234');
         deepEqual(options.db_url,'mongodb://localhost:27017/dositio');
 
